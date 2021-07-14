@@ -1,0 +1,84 @@
+.header {
+    display: flex;
+    background-color: #2D25A0;
+    width: 1440px;
+    height: 677px;
+}
+
+.header h1 {
+    font-family: Poppins;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 75px;
+    line-height: 80px;
+}
+
+.header-title {
+    margin: 207px 102px 240px 156px;
+}
+
+.header-banner img {
+    width: 556.01px;
+    height: 438px;
+    margin: 153px 140.99px 86px 0px;
+}
+
+#header-button {
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 24px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px 0px;
+    align-items: center;
+    left: 180px;
+    top: 747px;
+    padding: 15px;
+}
+
+.grid>article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    width: 330px;
+    height: 474px;
+}
+
+.grid>article img {
+    position: static;
+    width: 300px;
+    height: 256px;
+    left: 0px;
+    top: 0px;
+}
+
+.text {
+    position: static;
+    width: 300px;
+    height: 154px;
+    left: 0px;
+    top: 272px;
+}
+
+footer {
+   align-items: center;
+    background-color: beige;
+    width: 483.87px;
+    height: 213px;
+    left: 475px;
+    top: 3474px;
+}
+footer>div>img{
+    width: 262.1px;
+height: 110px;
+
+}
+span:after {
+    content: ' \00A9';
+}
