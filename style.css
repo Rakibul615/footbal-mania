@@ -1,30 +1,47 @@
+body{
+    margin: 0px;
+    padding: 0px;
+   
+}
 .header {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+    grid-column-gap:102px;
     background-color: #2D25A0;
-    width: 1440px;
+    width: 100%;
     height: 677px;
+
 }
 
-.header h1 {
+.header-title h1 {
+    text-justify:auto;
     font-family: Poppins;
     color: #FFFFFF;
     font-style: normal;
     font-weight: bold;
-    font-size: 75px;
-    line-height: 80px;
+    font-size: 55px;
+ 
+   
+  
 }
 
-.header-title {
-    margin: 207px 102px 240px 156px;
+
+.header-banner>img:hover{
+    width: 400px;
+      height: 300px;
+    transition: 2000ms linear; 
 }
 
 .header-banner img {
     width: 556.01px;
     height: 438px;
-    margin: 153px 140.99px 86px 0px;
+   
+   
 }
 
-#header-button {
+.header-button {
     background-color: #E02C6D;
     color: #FFFFFF;
     font-size: 24px;
@@ -32,25 +49,26 @@
     padding: 10px 24px;
 }
 
-.grid {
-    display: grid;
+.player-details {
+      display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px 0px;
+    justify-content: center;
+    width: 100%;
+    grid-gap:27px 30px ;
     align-items: center;
-    left: 180px;
-    top: 747px;
-    padding: 15px;
+    padding: 40px;
 }
 
-.grid>article {
+.player-details>article {
     border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.432);
     padding: 15px;
+   
     width: 330px;
     height: 474px;
 }
 
-.grid>article img {
+.player-details>article img {
     position: static;
     width: 300px;
     height: 256px;
@@ -59,26 +77,103 @@
 }
 
 .text {
-    position: static;
+     text-justify: auto;
     width: 300px;
     height: 154px;
     left: 0px;
     top: 272px;
 }
+.buy-detail{
+    display: grid;
+    grid-template-columns: 1fr ;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap:30px;   
+    padding: 20px;
+}
+.ticket{
+    background-image: url("images/bg.png");
+    background-size: inherit;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: top right;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.432);
+    margin-left: 17px;
+    position: relative;
+    width: auto;
+    height: 200px;
+    padding: 40px;
+}
+.ticket h1{
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: 400px;
+    padding: 10px
+    
+   
+}
+.ticket-button{
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    font-size: 24px;
+    position: absolute;
+    font-weight: bold;
+    padding: 10px 24px;
+    margin: 10rem 0px 0px 3.5rem;
+
+}
+
+
+.jersey{
+    display: flex;
+    background-color: #F5F5F5;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.432);
+    justify-content: space-between;
+    margin-left: 17px;
+    position: relative;
+    width: auto;
+    height: 200px;
+    padding: 40px;
+    flex-direction: row;
+    
+    
+}
+.jersey h1{
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: 400px;
+    padding: 10px
+}
+.image-jersey img{
+    width: 300px;
+    height: 200px;
+    
+}
 
 footer {
-   align-items: center;
-    background-color: beige;
-    width: 483.87px;
-    height: 213px;
-    left: 475px;
-    top: 3474px;
+    display: grid;
+    grid-template-columns: auto;  
+    grid-row-gap:20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    
+    
 }
-footer>div>img{
-    width: 262.1px;
-height: 110px;
 
+footer>div>img {
+    padding-top: 8px;
+    width: 262.1px;
+    height: 110px;  
 }
-span:after {
+#copyright-icon{
+    margin: 5px;
+}
+
+#copyright-icon:after {
     content: ' \00A9';
 }
